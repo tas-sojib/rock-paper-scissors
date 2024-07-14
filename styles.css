@@ -1,0 +1,148 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+}
+
+.container {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#message-el {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 1.2em;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.choices button {
+    color: #ffffff;
+    width: 120px;
+    height: 50px;
+    background: #5a67d8;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.choices button:hover {
+    background: #434190;
+    transform: scale(1.05);
+}
+
+.choices button:focus {
+    background: #2d3748;
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    outline: none; /* Remove default focus outline */
+}
+
+.results, .score, .winner {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.results p, .score p, .winner p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.score {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.score p {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#winner-announcement {
+    font-size: 1.5em;
+    color: #e53e3e;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.end-game {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.end-game h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.end-game button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #5a67d8;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.end-game button:hover {
+    background: #434190;
+    transform: scale(1.05);
+}
+
+.end-game button:focus {
+    background: #2d3748;
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    outline: none; /* Remove default focus outline */
+}
+
